@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function About()
+    public function About($id,$name)
     {
         return view('UserView')
-            ->with('name','Ryuu')
-            ->with('id','12345');
+            ->with('name',$name)
+            ->with('id',$id);
     }
 }
